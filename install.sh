@@ -27,7 +27,7 @@ if [ "$answer" == "y" ]; then
     echo """done! u can add hangul in fcitx5 and u need to apply virtual keyboard setup(fcitx) too
     you need to add system variable to /etc/enviroment copy variable to below. \n\nGTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
-XMODIFIERS=@im=fcitx""
+XMODIFIERS=@im=fcitx"""
 
 elif [ "$answer" == "n" ]; then
     echo "bye"
