@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # -p 옵션을 사용해야 질문 메시지를 출력하고 입력을 받을 수 있습니다.
 read -p "This script will install KDE on your device. Continue? (y/n): " answer
 
