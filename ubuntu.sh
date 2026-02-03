@@ -10,6 +10,10 @@ if [ "$answer" == "y" ]; then
     
     # sddm을 기본 서비스로 설정하고 즉시 실행
     sudo systemctl enable --now sddm
+
+    mkdir -p ~/.config/autostart
+    cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart/
+
     
     echo """KDE installation complete. Please reboot if the screen doesn't switch.
     type this command to /etc/environment
