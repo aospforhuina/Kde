@@ -15,6 +15,8 @@ if [ "$answer" == "y" ]; then
     type this command to /etc/environment
     GTK_IM_MODULE=fcitx
     QT_IM_MODULE=fcitx
+    XMODIFIERS=@im=fcitx
+
 """
 
 elif [ "$answer" == "n" ]; then
