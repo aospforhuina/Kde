@@ -17,13 +17,6 @@ if [ "$answer" == "y" ]; then
     makepkg -si --noconfirm && \
     yay -S --noconfirm otf-pretendard && \
 
-    # 5. 환경 변수 설정 (System-wide)
-    # sudo bash -c "cat >> /etc/environment <<EOF
-#GTK_IM_MODULE=fcitx
-#QT_IM_MODULE=fcitx
-#XMODIFIERS=@im=fcitx
-#EOF"
-
     echo """done! u can add hangul in fcitx5 and u need to apply virtual keyboard setup(fcitx) too
     you need to add system variable to /etc/enviroment copy variable to below. \n\nGTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
