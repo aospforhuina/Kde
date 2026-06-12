@@ -1,5 +1,5 @@
 import subprocess
-commands = "sudo pacman -Syyu && sudo pacman -S plasma-desktop openssh sddm openssh konsole firefox fcitx5 fcitx5-hangul sddm-kcm && sudo systemctl enable --now sddm && sudo systemctl enable --now sshd"
+commands = "sudo pacman -Syyu && sudo pacman -S plasma-desktop openssh sddm openssh konsole firefox fcitx5 fcitx5-hangul sddm-kcm plasma-nm pipewire-pulse  bash-completion wget git power-profiles-daemon fastfetch kate okular NetworkManager wireplumber noto-fonts-cjk dolphin ark gwenview kdegraphics-thumbnailers ffmpegthumbs bluez bluez-utils bluedevil mesa lib32-mesa xf86-video-amdgpu  && sudo systemctl enable --now sddm && sudo systemctl enable --now sshd && sudo systemctl enable --now bluetooth"
 fcitx5 = "mkdir -p ~/.config/autostart && cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart"
 font + "yay -S otf-pretendard"
 yay = "sudo pacman -S --needed git base-devel
