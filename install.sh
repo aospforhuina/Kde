@@ -6,7 +6,10 @@ if [ "$answer" == "y" ]; then
     # 1. 시스템 업데이트 및 필수 패키지 설치
     sudo pacman -Syu --noconfirm kde-applications-meta plasma-meta sddm \
     fcitx5-im fcitx5-hangul fcitx5-configtool fcitx5-gtk fcitx5-qt nano \
-    noto-fonts noto-fonts-cjk noto-fonts-emoji git base-devel fcitx5 && \
+    noto-fonts noto-fonts-cjk noto-fonts-emoji git base-devel fcitx5 \
+    mesa xf86-video-amdgpu vulkan-radeon && \
+    pipewire pipewire-pulse pipewire-alsa wireplumber \
+    fcitx5-frontend-qt5 fcitx5-frontend-gtk3 \
 
     sudo systemctl enable --now sddm && \
 
