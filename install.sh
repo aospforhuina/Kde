@@ -9,7 +9,6 @@ if [ "$answer" == "y" ]; then
     networkmanager plasma-nm bluez bluez-utils bluedevil plasma-pa \
     pipewire pipewire-pulse pipewire-alsa wireplumber \
     fcitx5 fcitx5-im fcitx5-hangul fcitx5-configtool fcitx5-gtk fcitx5-qt \
-    fcitx5-frontend-qt5 fcitx5-frontend-gtk3 \
     mesa xf86-video-amdgpu vulkan-radeon xorg-xwayland \
     noto-fonts noto-fonts-cjk noto-fonts-emoji \
     unzip p7zip unrar firefox git base-devel nano && \
@@ -25,9 +24,10 @@ if [ "$answer" == "y" ]; then
     yay -S --noconfirm otf-pretendard && \
 
     echo """done! u can add hangul in fcitx5 and u need to apply virtual keyboard setup(fcitx) too
-    you need to add system variable to /etc/enviroment copy variable to below. \n\nGTK_IM_MODULE=fcitx
-QT_IM_MODULE=fcitx
-XMODIFIERS=@im=fcitx"""
+    you need to add system variable to /etc/enviroment copy variable to below.
+    GTK_IM_MODULE=fcitx
+    QT_IM_MODULE=fcitx
+    XMODIFIERS=@im=fcitx"""
 
 elif [ "$answer" == "n" ]; then
     echo "bye"
