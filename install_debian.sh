@@ -2,7 +2,7 @@
 
 set -e
 
-pack="kubuntu-desktop network-manager plasma-nm pipewire polkit-kde-agent-1 plasma-pa konsole dolphin plasma-systemmonitor btop gparted p7zip-full p7zip-rar rar unrar unzip zip bzip2 spectacle gwenview kcalc kfind firefox fcitx5 fcitx5-hangul sddm ssh sddm-theme-breeze kde-config-fcitx5 im-config bluez bluez-tools bluedevil pipewire-module-bluetooth"
+pack="kubuntu-desktop network-manager plasma-nm pipewire polkit-kde-agent-1 plasma-pa konsole dolphin plasma-systemmonitor btop gparted p7zip-full rar unrar unzip zip bzip2 gwenview kcalc kfind firefox fcitx5 fcitx5-hangul sddm ssh sddm-theme-breeze kde-config-fcitx5 im-config bluez bluez-tools bluedevil"
 
 sudo apt install $pack -y
 sudo apt install -f
