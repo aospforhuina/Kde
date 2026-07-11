@@ -1,1 +1,1 @@
-sudo apt update && sudo apt install --no-install-recommends -y plasma-workspace-wayland plasma-desktop plasma-nm kmix bluedevil firefox kate konsole sddm && sudo systemctl enable sddm bluetooth 
+sudo apt update && sudo apt install --no-install-recommends -y plasma-desktop plasma-nm kmix bluedevil firefox kate fonts-noto-cjk konsole sddm && sudo systemctl enable --now sddm bluetooth 
