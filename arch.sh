@@ -15,7 +15,7 @@ yay -Syu
 yay -S nvidia-470xx-dkms nvidia-470xx-utils lib32-nvidia-470xx-utils nvidia-settings
 
 sudo nano /etc/kernel/cmdline
-add this nvidia-drm.modeset=1 nvidia-drm.fbdev=1
+add this nvidia-drm.modeset=1 nvidia-drm.fbdev=1 video=HDMI-A-1:1920x1080M@60
 sudo mkinitcpio -P 
 
 sudo nano /etc/mkinitcpio.conf
