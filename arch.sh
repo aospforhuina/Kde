@@ -16,11 +16,11 @@ yay -S nvidia-470xx-dkms nvidia-470xx-utils lib32-nvidia-470xx-utils nvidia-sett
 
 sudo nano /etc/kernel/cmdline
 add this nvidia-drm.modeset=1 nvidia-drm.fbdev=1 video=HDMI-A-1:1920x1080M@60
-sudo mkinitcpio -P 
 
 sudo nano /etc/mkinitcpio.conf
 MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
 remove kms on hook
+sudo mkinitcpio -P 
 
 cd ~ && wget https://raw.githubusercontent.com/korvahannu/arch-nvidia-drivers-installation-guide/main/nvidia.hook
 nano nvidia.hook
