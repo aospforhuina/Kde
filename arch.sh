@@ -4,6 +4,8 @@ sudo nano /etc/environment
 XMODIFIERS=@im=fcitx
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
+mkdir -p ~/.config/autostart && cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart 
+
 
 sudo pacman -S base-devel linux-zen-headers git nano --needed
 sudo nano /etc/pacman.conf
